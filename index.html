@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مانده تا سال جدید</title>
+    <link rel="stylesheet" href="css/flipdown.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+    <div class="center">
+        <audio autoplay id="myAudio">
+            <source src="music.mp3" type="audio/mpeg">
+          </audio>
+          <script>
+            window.onload = function() {
+                playAudio();
+            }
+    
+            window.onloadeddata = function () {
+                playAudio();
+            }
+    
+            function playAudio() {
+                var audio = document.getElementById("myAudio");
+              audio.play();
+            }
+          </script>
+            
+    
+        <div id="flipdown" class="flipdown"></div>
+        <p class="year-title">
+            <br>
+            تا سال ۱۴۰۲ مانده است...
+    
+            <br>
+    
+            <button class="btn-custom" type="button" dir="rtl" onclick="playAudio()">بخش کن !</button>
+        </p>
+    
+    </div>
+
+    <script src="js/flipdown.min.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

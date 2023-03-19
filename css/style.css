@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "font1";
+    src: url(../fonts/1.eot);
+    src: url(../fonts/1.eot) format("embedded-opentype"),
+        url(../fonts/6.woff2) format("woff2"),
+        url(../fonts/5.woff) format("woff"),
+        url(../fonts/4.ttf) format("truetype"),
+        url(../fonts/3.svg) format("svg");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+body {
+    font-family: "font1";
+    width: 100%;
+    background-image: url(../images/img1.jpg);
+    background-size: inherit;
+    text-align: center;
+}
+
+.flipdown {
+    margin: 60px auto 0;
+}
+
+.year-title {
+    margin: 30px auto 0;
+    direction: rtl;
+    font-size: 22px;
+    color: #fff;
+    width: 100%;
+    background-color: #151515;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.animation{
+    animation: Noroz 3s ease infinite;
+}
+
+@keyframes Noroz {
+    0% {background-color: #151515; color: #fff;}
+    50% {background-color: #fff; color: #151515;}
+    100% {background-color: #151515; color: #fff;}
+}
+
+@media screen and (max-width:500px) {
+    body {
+        background-image: url(../images/img1.jpg);
+        background-size: inherit;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+   
+.year-title {
+    width: 90%;
+}
+
+}
+
+button{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    background-color: red;
+}
+
+.btn-custom {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background-color: #ffc107;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: all .2s ease-in-out;
+  }
+  
+  .btn-custom:hover {
+    color: #212529;
+    background-color: #e0a800;
+    border-color: transparent;
+  }
+  
+  .rotor-group-heading{
+    color: white !important;
+  }
